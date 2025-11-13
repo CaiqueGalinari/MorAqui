@@ -48,4 +48,40 @@
 - Como usuário, eu gostaria de saber onde ficam os imóveis
 
 ### Sprint:
-(A definir)
+#### História #1 — Como usuário, eu gostaria de me cadastrar
+Tarefas e responsáveis:
+- Criar tela de registro de usuário (nome, e-mail, senha, tipo de usuário) — Frontend: [Érick]
+- Implementar API de cadastro de usuários e salvar no SGBD — Backend: [Caíque]
+- Conectar tela de registro ao backend e testar o fluxo completo — Frontend + Backend [Ronald]
+
+---
+
+#### História #2 — Como usuário, eu gostaria de cadastrar um imóvel
+Tarefas e responsáveis:
+- Criar formulário para cadastro de imóvel (endereço, valor, vagas, descrição, fotos) — Frontend: [Érick]
+- Implementar rota no backend para receber, validar e salvar imóveis no SGBD — Backend: [Caíque]
+- Validar dados e conectar o frontend ao backend — Frontend + Backend [Ronald]
+
+---
+
+#### História #3 — Como usuário, eu gostaria de encontrar imóveis que me atendam
+Tarefas e responsáveis:
+- Criar tela principal com lista de imóveis — Frontend: [Kaiky]
+- Implementar endpoint no backend para buscar imóveis no SGBD com filtros (cidade, preço, vagas) — Backend: [Letícia]
+- Conectar busca do frontend à API e exibir resultados — Frontend + Backend [Ronald]
+
+---
+
+#### História #4 — Como usuário, eu gostaria de saber como é o imóvel
+Tarefas e responsáveis:
+- Criar página de detalhes do imóvel — Frontend: [Kaiky]
+- Implementar rota no backend que retorna os dados completos de um imóvel do SGBD — Backend: [Letícia]
+- Integrar lista → detalhes com link “ver mais” — Frontend + Backend [Ronald]
+
+---
+
+#### História #5 — Como usuário, eu gostaria de falar com quem está alugando um quarto
+Tarefas e responsáveis:
+- Criar botão “Entrar em contato” na página de detalhes — Frontend: [Érick]
+- Criar endpoint no backend para processar o contato (ou simular com redirecionamento de e-mail/whatsapp) — Backend: [Caíque]
+- Testar fluxo de contato — Frontend + Backend [Ronald]
