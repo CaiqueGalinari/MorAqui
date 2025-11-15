@@ -37,15 +37,15 @@
 - Como usuário, eu gostaria de alterar meus dados
 - Como usuário, eu gostaria de cadastrar um imóvel
 - Como usuário, eu gostaria de alterar os dados do imóvel
-- Como usuário, eu gostaria de saber como são meus futuros colegas
+- Como usuário, eu gostaria de encontrar imóveis que me atendam
+- Como usuário, eu gostaria de saber onde ficam os imóveis
+- Como usuário, eu gostaria de encontrar pessoas compatíveis para morar comigo
+- Como usuário, eu gostaria de falar com quem está alugando um quarto
 - Como usuário, eu gostaria de saber como que é o imóvel
+- Como usuário, eu gostaria de saber como são meus futuros colegas
 - Como usuário, eu gostaria de saber o que as pessoas pensam de um imóvel que moraram
 - Como usuário, eu gostaria de falar o que penso sobre um imóvel que morei
-- Como usuário, eu gostaria de falar com quem está alugando um quarto
-- Como usuário, eu gostaria de encontrar imóveis que me atendam
-- Como usuário, eu gostaria de encontrar pessoas compatíveis para morar comigo
 - Como usuário, eu gostaria de guardar um imóvel que gostei muito para alugar depois
-- Como usuário, eu gostaria de saber onde ficam os imóveis
 
 ### Sprint:
 #### História #1 — Como usuário, eu gostaria de me cadastrar
