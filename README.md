@@ -30,6 +30,7 @@
 ### BackEnd:
 - **Linguagem:** Java
 - **SGBD:** PostgreSQL
+- **Servlet:** Tomcat
 
 ## Backlogs:
 ### Produto:
