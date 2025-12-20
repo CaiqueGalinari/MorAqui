@@ -15,16 +15,17 @@ public class UsuarioServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 1. Receber os dados que vieram do HTML
         String nome = req.getParameter("nome");
-        String descricao = req.getParameter("descricao");
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
+        String descricao = new String();
+        descricao = "Escreva aqui sua descrição!";
 
         // 2. Criar o objeto Usuario e preencher
         dto.Usuario u = new dto.Usuario();
         u.setNome(nome);
-        u.setDescricao(descricao);
         u.setEmail(email);
         u.setSenha(senha);
+        u.setDescricao(descricao);
 
         // Gerando uma security_key aleatória de 8 digitos
         String key = java.util.UUID.randomUUID().toString().substring(0, 8);

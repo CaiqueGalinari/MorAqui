@@ -19,7 +19,7 @@ public class UsuarioDAO {
 
             // Preenche os ? do SQL com os dados do objeto usuario
             ps.setString(1, usuario.getNome());
-            ps.setString(2, usuario.getDescricao()); // No seu banco chama 'descricao', mas seria o Nome
+            ps.setString(2, usuario.getDescricao());
             ps.setString(3, usuario.getEmail());
             ps.setString(4, usuario.getSenha());
             ps.setString(5, usuario.getSecurityKey());
@@ -31,7 +31,7 @@ public class UsuarioDAO {
             e.printStackTrace();
             throw new RuntimeException("Erro ao cadastrar usuário: " + e.getMessage());
         } finally {
-            // É boa prática fechar as conexões para não travar o banco
+            // Fechando conexões p não travar o BD
             try { if (ps != null) ps.close(); } catch (Exception e) {}
             try { if (conn != null) conn.close(); } catch (Exception e) {}
         }

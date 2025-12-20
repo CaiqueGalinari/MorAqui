@@ -16,10 +16,8 @@ public class Conexao {
                     "88756789"
             );
         } catch (ClassNotFoundException e) {
-            // Este é o bloco que estava faltando!
             throw new RuntimeException("Driver do Banco não encontrado (Erro de biblioteca): " + e.getMessage());
         } catch (SQLException e) {
-            // Este é o bloco para erro de senha ou banco desligado
             throw new RuntimeException("Erro ao conectar no banco: " + e.getMessage());
         }
     }
