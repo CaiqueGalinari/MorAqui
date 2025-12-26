@@ -20,11 +20,11 @@ FOREIGN KEY(id_usuario)
 	ON DELETE CASCADE
 );
 
-CREATE TABLE moradia
+CREATE TABLE moradia 
 (
 id_moradia SERIAL PRIMARY KEY,
 endereco VARCHAR(255) NOT NULL,
-tot_inquilino INT NOT NULL,
+tot_inquilino INT NOT NULL DEFAULT 0,
 max_inquilino INT NOT NULL,
 tipo VARCHAR(20) NOT NULL,
 nome_dono VARCHAR(50) NOT NULL,
@@ -37,10 +37,11 @@ id_quem_cadastrou INT NOT NULL,
 CHECK (tot_inquilino >= 0),
 CHECK (max_inquilino > 0),
 CHECK (tot_inquilino <= max_inquilino),
+CHECK (tipo IN ('Casa', 'Apartamento', 'Kitnet', 'Quarto', 'Republica')), -- Lista fechada
 
 FOREIGN KEY(id_quem_cadastrou) 
-	REFERENCES usuario(id_usuario) 
-	ON DELETE CASCADE
+    REFERENCES usuario(id_usuario) 
+    ON DELETE CASCADE
 );
 
 CREATE TABLE foto_moradia
